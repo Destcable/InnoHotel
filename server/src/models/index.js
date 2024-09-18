@@ -1,4 +1,4 @@
-import { _allRoomTypesMeta, allRoomTypes } from "./RoomType/Query"
+import { _allRoomTypesMeta, allRoomTypes } from "./RoomType/Query.js"
 
 export const Query = {
     allRoomTypes,
