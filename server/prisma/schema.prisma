@@ -16,3 +16,9 @@ model RoomType {
     name           String
     description    String?
 }
+
+model RoomStatus { 
+    id             String             @id @default(cuid())
+    name           String
+    description    String?
+}

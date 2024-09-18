@@ -1,4 +1,4 @@
-type RoomType { 
+type RoomStatus { 
     id:             ID
     name:           String!
     description:    String
@@ -9,11 +9,11 @@ type ListMetadata {
 }
 
 type Query {
-    allRoomTypes: [RoomType]
-    _allRoomTypesMeta: ListMetadata
+    allRoomStatus: [RoomType]
+    _allRoomStatusMeta: ListMetadata
 }
 
 type Mutation { 
-    createRoomType(name: String!, description: String): RoomType
+    createRoomStatus(name: String!, description: String): RoomType
     deleteRoomType(id: ID!): RoomType
 }
