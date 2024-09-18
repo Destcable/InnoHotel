@@ -9,8 +9,8 @@ type ListMetadata {
 }
 
 type Query {
-    allRoomStatus: [RoomType]
-    _allRoomStatusMeta: ListMetadata
+    allRoomStatuses: [RoomType]
+    _allRoomStatusesMeta: ListMetadata
 }
 
 type Mutation { 
