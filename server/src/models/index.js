@@ -1,3 +1,4 @@
+import { createRoomType } from "./RoomType/Mutation.js"
 import { _allRoomTypesMeta, allRoomTypes } from "./RoomType/Query.js"
 
 export const Query = {
@@ -6,4 +7,5 @@ export const Query = {
 }
 
 export const Mutation = {
+    createRoomType
 }
