@@ -1,0 +1,24 @@
+type Department {
+    name:           String!
+    count:          Int
+}
+
+type RoomType { 
+    id:             ID
+    name:           String!
+    description:    String
+}
+
+type ListMetadata { 
+    count: Int!
+}
+
+type Query {
+    allRoomTypes: [RoomType]
+    _allRoomTypesMeta: ListMetadata
+}
+
+type Mutation { 
+    createRoomType(name: String!, description: String): RoomType
+    deleteRoomType(id: ID!): RoomType
+}
